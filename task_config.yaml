@@ -1,0 +1,18 @@
+version: v2
+name: Horusec
+slug: horusec
+type: code_format
+summary: Horusec is an open source tool that orchestrates other security tools and identifies security flaws or vulnerabilities in projects and put all results in a database for analysis and generation of metrics.
+description: |
+  Horusec is an open source tool that orchestrates other security tools and identifies security flaws or vulnerabilities in projects and put all results in a database for analysis and generation of metrics.
+subscription_level: 2
+memory: 1024
+timeout: 300
+default_configuration:
+  installation:
+    org: false
+subscribed_events:
+  - pull_request.opened
+  - pull_request.reopened
+  - pull_request.synchronize
+  - check_run.rerequested
